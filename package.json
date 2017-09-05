@@ -1,0 +1,39 @@
+{
+  "name": "neighborhood-doings",
+  "version": "1.0.0",
+  "description": "Movie-Watchers is the BEST and most convenient companion for anyone that loves to unwind to one of their favorite movies after a long day. This app is best suitable for anyone who loves to vote, take notes, and leave opinions on movies they watch. Enjoy!",
+  "main": "node ./bin/www",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bluebird": "^3.5.0",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.10"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production webpack && gulp",
+    "postinstall": "npm run build",
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wendu77/moviewatchers.git"
+  },
+  "keywords": [
+    "movies",
+    "moviedb",
+    "movie-nominations",
+    "watch",
+    "see",
+    "look",
+    "enjoy",
+    "relax"
+  ],
+  "author": "Chinwendu Opara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wendu77/moviewatchers/issues"
+  },
+  "homepage": "https://github.com/wendu77/moviewatchers#readme"
+}
