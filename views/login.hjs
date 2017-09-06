@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>Create Comment</h1>
+
+    <form action="/account/login" method="post">
+    	<input type="text" name="username" placeholder="username" /><br />
+    	<input type="text" name="password" placeholder="password" /><br />
+			<input type="submit" value="Login" />
+    </form>
+  </body>
+</html>

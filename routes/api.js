@@ -11,7 +11,7 @@ router.get('/:resource', function(req, res, next){
 	if (controller == null){
 		res.json({
 			confirmation: 'fail',
-			message: 'Invalid Resource Request: '+ resource
+			message: 'Invalid Resource Request: '+resource
 		})
 
 		 return
@@ -43,7 +43,7 @@ router.get('/:resource/:id', function(req, res, next){
 	if (controller == null){
 		res.json({
 			confirmation: 'fail',
-			message: 'Invalid Resource Request: '+ resource
+			message: 'Invalid Resource Request: '+resource
 		})
 
 		 return
@@ -72,7 +72,7 @@ router.post('/:resource', function(req, res, next){
 	if (controller == null){
 		res.json({
 			confirmation: 'fail',
-			message: 'Invalid Resource Request: '+ resource
+			message: 'Invalid Resource Request: '+resource
 		})
 
 		 return

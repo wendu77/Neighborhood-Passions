@@ -1,17 +1,16 @@
-var express = require('express')
-var router = express.Router()
-var Promise = require('bluebird')
+var express           = require('express')
+var router            = express.Router()
+var Promise           = require('bluebird')
 var AccountController = require('../controllers/AccountController')
-var controllers = require('../controllers')
-
-var serverapp = require('../public/build/es5/serverapp')
-var React = require('react')
-var ReactRouter = require('react-router')
-var ReactDOMServer = require('react-dom/server')
-var Home = require('../public/build/es5/components/layout/Home')
-var Account = require('../public/build/es5/components/containers/Account')
-var ProfileInfo = require('../public/build/es5/components/layout/ProfileInfo')
-var store = require('../public/build/es5/stores/store')
+var controllers       = require('../controllers')
+var serverapp         = require('../public/build/es5/serverapp')
+var React             = require('react')
+var ReactRouter       = require('react-router')
+var ReactDOMServer    = require('react-dom/server')
+var Home              = require('../public/build/es5/components/layout/Home')
+var Account           = require('../public/build/es5/components/containers/Account')
+var ProfileInfo       = require('../public/build/es5/components/layout/ProfileInfo')
+var store             = require('../public/build/es5/stores/store')
 
 
 matchRoutes = function(req, routes, initialStore){
@@ -33,6 +32,7 @@ router.get('/', function(req, res, next) {
 	AccountController.currentUser(req)
 
 	.then(function(result){
+//		console.log('CURRENT USER: '+JSON.stringify(result))
 		reducers['account'] = { // Populate store/reducer with current user:
 			user: result,
 			appStatus: 'ready'
@@ -49,6 +49,7 @@ router.get('/', function(req, res, next) {
 		}
 	})
 	.then(function(){
+		// console.log('REDUCERS: '+JSON.stringify(reducers))
 		initialStore = store.configureStore(reducers)
 		var routes = {
 			path: '/',

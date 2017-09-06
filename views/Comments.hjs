@@ -1,0 +1,11 @@
+<div style={styles.comment.commentsBox} className="col-md-12">
+	<h2>Neighborhood Doings</h2>
+	<center><img style={{width:690, height:300}} src="/images/neighborhood.jpg" /></center>
+		<h3>Comments for <span style={styles.comment.title}>{zoneName}</span>: </h3>
+		<ul style={styles.comment.commentsList}>
+			{ commentList }
+		</ul>
+</div>
+<div style={styles.comment.commentsBox} className="col-md-12">
+	<CreateComment commentImage={this.state.updated.commentImage}  handleImage={this.uploadImage.bind(this)}  onCreate={this.submitComment.bind(this)} />
+</div>

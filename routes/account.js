@@ -13,7 +13,7 @@ router.get('/:action', function(req, res, next){
       req.session.reset()
       res.json({
         confirmation:'success',
-        message: 'You\'ve been logged out'
+        message: 'User Logged Out'
       })
     }
     if(action == 'currentuser'){

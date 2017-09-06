@@ -1,0 +1,16 @@
+/public/material
+/public/eventually
+/node_modules/
+.env
+/views/scratch.hjs
+/views/scratch2.hjs
+/public/assets2
+/public/mypages
+updateProfileScratch.hjs
+profileScratch.hjs
+/public/assets/img/demo
+/public/assets/media
+/public/build/
+/src/components/containers/Account.js
+/src/components/containers/Comments.js
+/src/components/containers/UpdateProfile.js

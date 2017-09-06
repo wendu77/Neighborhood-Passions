@@ -5,7 +5,7 @@ var AccountController = require('./AccountController')
 
 module.exports = {
 	comment: CommentController,
-	zone:    ZoneController,
+	zone: ZoneController,
 	profile: ProfileController,
 	account: AccountController
 }
