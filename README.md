@@ -3,4 +3,4 @@ Ever wonder <strong>what's going</strong> on in your neighborhood?? Well, now yo
 
 <strong>LIVE DEMO</strong>: https://neighborhood-doings-co.herokuapp.com/
 
-(This Application was developed with the <strong>MongoDB, Express, ReactJS, Node, Redux</strong>, and many other technologies that you may find in the package.json file!
+(This Application was developed with <strong>MongoDB, Express, ReactJS, Node, Redux</strong>, and many other technologies that you may find in the package.json file!
