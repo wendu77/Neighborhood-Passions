@@ -5,5 +5,4 @@ Ever wonder <strong>what's going</strong> on in your neighborhood?? Well, now yo
 
 <strong>LIVE DEMO</strong>: https://neighborhood-doings-co.herokuapp.com/
 
-![alt text](https://raw.githubusercontent.com/wendu77/Neighborhood-Doings
-/master/screenshots/neighborhooddoingsgif.gif)
+![Screenshot](gifs/neighborhooddoingsgif.gif)
