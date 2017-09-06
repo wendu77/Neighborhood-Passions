@@ -5,4 +5,4 @@ Ever wonder <strong>what's going</strong> on in your neighborhood?? Well, now yo
 
 <strong>LIVE DEMO</strong>: https://neighborhood-doings-co.herokuapp.com/
 
-!(neighborhooddoingsgif.gif)
+![Neighborhood-Doings](https://user-images.githubusercontent.com/24254780/30138180-debb13c4-9334-11e7-9ab2-7e418f84054c.gif)
