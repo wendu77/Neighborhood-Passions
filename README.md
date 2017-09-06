@@ -1,2 +1,4 @@
 # Neighborhood-Doings
-Ever wonder what's going on in your neighborhood?? Well, now you don't have to! Neighborhood-Doings is an app that keeps all residents updated on what is going on in their community! Every second, every minute, every hour, and every day.
+Ever wonder <strong>what's going</strong> on in your neighborhood?? Well, now you don't have to! <bold>Neighborhood-Doings</bold> is an app that keeps all residents updated on <em>what is going on</em> in their community! Every second, every minute, every hour, and every day.
+
+<strong>LIVE DEMO</strong>: https://neighborhood-doings-co.herokuapp.com/
