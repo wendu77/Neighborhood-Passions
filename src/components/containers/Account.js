@@ -198,7 +198,7 @@ render(){
 					<div className="container">
 						<div className="row">
 							<div className="col-md-12">
-								<div className="card card-hero animated fadeInUp animation-delay-7" style={{background:'#000119'}}>
+								<div className="card card-hero animated fadeInUp animation-delay-7" style={{background:'#000'}}>
 									<div className="card-block">
 										<h1 className="text-center" style={{color:'#ff0088', fontWeight: '700'}}>Login</h1>
 										<center><span style={{fontSize:'.9em',textAlign:'center',color:'#fff'}}> Don't wanna register? Just login with<br />username: <em style={{color:'#ff0088'}}>wendu</em>&nbsp;&nbsp;&nbsp;password: <em style={{color:'#ff0088'}}>1234567</em></span></center>
@@ -225,7 +225,7 @@ render(){
 					</div>
 					<div style={{marginTop:130}} className="row">
 						<div className="col-md-12">
-							<div className="card card-hero animated fadeInUp animation-delay-9" style={{background:'#000119'}}>
+							<div className="card card-hero animated fadeInUp animation-delay-9" style={{background:'#000'}}>
 								<div className="card-block">
 											<h1 className="text-center" style={{color:'#ff0088', fontWeight: '700'}}>Register</h1>
 											<form className="form-horizontal" style={{padding:'10px'}}>
