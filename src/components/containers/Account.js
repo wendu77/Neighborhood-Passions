@@ -170,8 +170,8 @@ clearValues(){
     this.refs.gender.value=''
     this.refs.city.value=''
     this.refs.bio.value=''
-		this.refs.firstName.value=''
-		this.refs.lastName.value=''
+	this.refs.firstName.value=''
+	this.refs.lastName.value=''
 }
 
 render(){
