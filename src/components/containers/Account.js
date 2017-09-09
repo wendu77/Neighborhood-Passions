@@ -181,16 +181,14 @@ render(){
       content = (
 			<div>
 
-				<div className="sb-site-container" style={{background:'#ff0088'}}>
+				<div className="sb-site-container" style={{background:'#F8FAE3'}}>
 					<Header />
-					<div className="ms-hero-page-override ms-hero-img-city ms-hero-bg-dark-light">
+					<div className="ms-hero-page-override" style={{background: '#FC2452'}}>
 						<div className="container">
 							<div className="text-center">
-								<span className="ms-logo ms-logo-lg ms-logo-black center-block mb-2 mt-2 animated zoomInDown animation-delay-5" style={{background:'#ff0088'}}>CO</span>
-								<h1 className="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">Neighborhood
-									<span>Doings</span>
-								</h1>
-								<p  className="lead lead-lg color-white text-center center-block mt-2 mw-800 text-uppercase fw-500 animated fadeInUp animation-delay-7" style={{background:'#ff0088', padding: '10px'}}>Share and discover events in your neighborhood! <br />
+								
+
+								<p  className="lead lead-lg text-center center-block mt-2 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7" style={{background:'#FC2452', padding: '10px', color: '#F8FAE3'}}>Share and discover events in your neighborhood.<br />
 								 </p>
 							</div>
 						</div>
@@ -198,24 +196,24 @@ render(){
 					<div className="container">
 						<div className="row">
 							<div className="col-md-12">
-								<div className="card card-hero animated fadeInUp animation-delay-7" style={{background:'#000'}}>
+								<div className="card card-hero animated fadeInUp animation-delay-7" style={{background:'#F8FAE3', border: '1px solid #FC2452', boxShadow: '0 2px 2px transparent'}}>
 									<div className="card-block">
-										<h1 className="text-center" style={{color:'#ff0088', fontWeight: '700'}}>Login</h1>
-										<center><span style={{fontSize:'.9em',textAlign:'center',color:'#fff'}}> Don't wanna register? Just login with<br />username: <em style={{color:'#ff0088'}}>wendu</em>&nbsp;&nbsp;&nbsp;password: <em style={{color:'#ff0088'}}>1234567</em></span></center>
+										<h3 className="text-center text-uppercase" style={{color:'#FC2452', fontWeight: '400'}}>Login</h3>
+										<center><span className="text-uppercase" style={{fontSize:'.9em',textAlign:'center', color:'#FC2452'}}> Don't wanna register? Just login with<br />username: <em style={{color:'#FC2452'}}><strong>wendu</strong></em>&nbsp;&nbsp;&nbsp;password: <em style={{color:'#FC2452'}}><strong>1234567</strong></em></span></center>
 										<form className="form-horizontal">
 											<fieldset>
-												<div className="form-group" style={{borderColor:'#ff0088'}}>
-													<label  className="col-md-2 control-label">Username</label>
+												<div className="form-group" style={{borderColor:'#FC2452'}}>
+													<label  className="col-md-2 control-label text-uppercase" style={{color: '#FC2452'}}>Username</label>
 													<div className="col-md-10">
-														<input onChange={this.updateProfile.bind(this)} type="text" className="form-control" id="username" placeholder="your username" ref="use" style={{color:'#ff0088', fontWeight: '700', maxWidth: '720px'}} /> </div>
+														<input onChange={this.updateProfile.bind(this)} type="text" className="form-control text-uppercase" id="username" placeholder="your username" ref="use" style={{color:'#FC2452', fontWeight: '700', maxWidth: '720px'}} /> </div>
 												</div>
 												<div className="form-group">
-													<label  className="col-md-2 control-label">Password</label>
+													<label  className="col-md-2 control-label" style={{color: '#FC2452'}}>Password</label>
 													<div className="col-md-10">
-														<input onChange={this.updateProfile.bind(this)} type="password" className="form-control" id="password" placeholder="your password" ref="pass" style={{color:'#ff0088', fontWeight: '700', maxWidth: '720px'}} /> </div>
+														<input onChange={this.updateProfile.bind(this)} type="password" className="form-control text-uppercase" id="password" placeholder="your password" ref="pass" style={{color:'#FC2452', fontWeight: '700', maxWidth: '720px'}} /> </div>
 												</div>
 											</fieldset>
-											<button onClick={this.login.bind(this)} className="btn btn-raised btn-block" type="submit" style={{color:'#fff', fontWeight: '300', background: '#ff0088', maxWidth: '400px', margin: '0 auto'}}>Login
+											<button onClick={this.login.bind(this)} className="btn btn-raised btn-block text-uppercase" type="submit" style={{color:'#F8FAE3', fontWeight: '300', background: '#FC2452', maxWidth: '400px', margin: '0 auto'}}>Login
 												<i className="zmdi zmdi-long-arrow-right no-mr ml-1"></i>
 											</button>
 									</form>
@@ -225,9 +223,9 @@ render(){
 					</div>
 					<div style={{marginTop:130}} className="row">
 						<div className="col-md-12">
-							<div className="card card-hero animated fadeInUp animation-delay-9" style={{background:'#000'}}>
+							<div className="card card-hero animated fadeInUp animation-delay-9" style={{background:'#F8FAE3', border: '1px solid #FC2452', boxShadow: '0 2px 2px transparent'}}>
 								<div className="card-block">
-											<h1 className="text-center" style={{color:'#ff0088', fontWeight: '700'}}>Register</h1>
+											<h3 className="text-center text-uppercase" style={{color:'#FC2452', fontWeight: '400'}}>Register</h3>
 											<form className="form-horizontal" style={{padding:'10px'}}>
 												<fieldset>
 													<div className="form-group label-floating">
@@ -235,27 +233,27 @@ render(){
 															<span className="input-group-addon">
 																<i className="zmdi zmdi-account"></i>
 															</span>
-															<label className="control-label" >First Name</label>
+															<label className="control-label text-uppercase" style={{color: '#FC2452'}}>First Name</label>
 
-															<input onChange={this.updateProfile.bind(this)} type="text" id="firstName" className="form-control" ref="firstName" style={{color:'#ff0088', fontWeight: '700'}} /> </div>
+															<input onChange={this.updateProfile.bind(this)} type="text" id="firstName" className="form-control text-uppercase" ref="firstName" style={{color:'#FC2452', fontWeight: '700'}} /> </div>
 													</div>
 													<div className="form-group label-floating">
 														<div className="input-group">
 															<span className="input-group-addon">
 																<i className="zmdi zmdi-account"></i>
 															</span>
-															<label className="control-label" >Last Name</label>
+															<label className="control-label text-uppercase" style={{color: '#FC2452'}}>Last Name</label>
 
-															<input onChange={this.updateProfile.bind(this)} type="text" id="lastName" className="form-control" ref="lastName" style={{color:'#ff0088', fontWeight: '700'}} /> </div>
+															<input onChange={this.updateProfile.bind(this)} type="text" id="lastName" className="form-control text-uppercase" ref="lastName" style={{color:'#FC2452', fontWeight: '700'}} /> </div>
 													</div>
 													<div className="form-group label-floating">
 														<div className="input-group">
 															<span className="input-group-addon">
 																<i className="zmdi zmdi-account"></i>
 															</span>
-															<label className="control-label" >Username</label>
+															<label className="control-label text-uppercase" style={{color: '#FC2452'}}>Username</label>
 
-															<input onChange={this.updateProfile.bind(this)} type="text" id="username" className="form-control" ref="username" style={{color:'#ff0088', fontWeight: '700'}} /> </div>
+															<input onChange={this.updateProfile.bind(this)} type="text" id="username" className="form-control text-uppercase" ref="username" style={{color:'#FC2452', fontWeight: '700'}} /> </div>
 													</div>
 
 													<div className="form-group label-floating">
@@ -263,46 +261,46 @@ render(){
 															<span className="input-group-addon">
 																<i className="zmdi zmdi-lock"></i>
 															</span>
-															<label className="control-label" >Password</label>
-															<input onChange={this.updateProfile.bind(this)} type="password" id="password" className="form-control" ref="password" style={{color:'#ff0088', fontWeight: '700'}} /> </div>
+															<label className="control-label" style={{color: '#FC2452'}}>Password</label>
+															<input onChange={this.updateProfile.bind(this)} type="password" id="password" className="form-control" ref="password" style={{color:'#FC2452', fontWeight: '700'}} /> </div>
 													</div>
 													<div className="form-group label-floating">
 														<div className="input-group">
 															<span className="input-group-addon">
 																<i className="zmdi zmdi-male-female"></i>
 															</span>
-															<label className="control-label" >Gender</label>
-															<input onChange={this.updateProfile.bind(this)} type="text" id="gender" className="form-control" ref="gender" style={{color:'#ff0088', fontWeight: '700'}} /> </div>
+															<label className="control-label text-uppercase" style={{color: '#FC2452'}}>Gender</label>
+															<input onChange={this.updateProfile.bind(this)} type="text" id="gender" className="form-control text-uppercase" ref="gender" style={{color:'#FC2452', fontWeight: '700'}} /> </div>
 													</div>
 													<div className="form-group label-floating">
 														<div className="input-group">
 															<span className="input-group-addon">
 																<i className="zmdi zmdi-city"></i>
 															</span>
-															<label className="control-label" >City</label>
-															<input onChange={this.updateProfile.bind(this)} type="text" id="city" className="form-control" ref="city" style={{color:'#ff0088', fontWeight: '700'}} /> </div>
+															<label className="control-label text-uppercase" style={{color: '#FC2452'}}>City</label>
+															<input onChange={this.updateProfile.bind(this)} type="text" id="city" className="form-control text-uppercase" ref="city" style={{color:'#FC2452', fontWeight: '700'}} /> </div>
 													</div>
 													<div className="form-group label-floating">
 														<div className="input-group">
 															<span className="input-group-addon">
 																<i className="zmdi zmdi-puzzle-piece"></i>
 															</span>
-															<label className="control-label" >Short Bio</label>
-															<input onChange={this.updateProfile.bind(this)} type="text" id="bio" className="form-control" ref="bio" style={{color:'#ff0088', fontWeight: '700'}} /> </div>
+															<label className="control-label text-uppercase" style={{color: '#FC2452'}}>Short Bio</label>
+															<input onChange={this.updateProfile.bind(this)} type="text" id="bio" className="form-control text-uppercase" ref="bio" style={{color:'#FC2452', fontWeight: '700'}} /> </div>
 													</div>
 													<div className="form-group label-floating">
 														<div className="input-group">
 															<span className="input-group-addon">
 																<i className="zmdi zmdi-camera"></i>
 															</span>
-														 <DropZone id="dropzoneLocation" style={{color:'#ff0088'}} onDrop={this.uploadImage.bind(this)}>
-															 <a href="#dropzoneLocation" style={{color:'#ff0088'}} >
+														 <DropZone id="dropzoneLocation" style={{color:'#FC2452'}} onDrop={this.uploadImage.bind(this)}>
+															 <a href="#dropzoneLocation" style={{color:'#FC2452'}} className= "text-uppercase">
 																 Add Profile Image
 															 </a>
 														 </DropZone>
 													 </div> 
 													</div>
-													<button onClick={this.signUp.bind(this)} className="btn btn-raised btn-block btn-primary" type="submit" style={{color:'#fff', fontWeight: '300', background: '#ff0088', maxWidth: '400px', margin: '0 auto'}}>Register</button>
+													<button onClick={this.signUp.bind(this)} className="btn btn-raised btn-block text-uppercase" type="submit" style={{color:'#F8FAE3', fontWeight: '300', background: '#FC2452', maxWidth: '400px', margin: '0 auto'}}>Register</button>
 												</fieldset>
 											 </form>
 										 </div>
@@ -319,7 +317,7 @@ render(){
 
       content = (
         <div>
-					<div className="sb-site-container" style={{background:'#fff'}}>
+					<div className="sb-site-container" style={{background:'#F8FAE3'}}>
 					<Header />
 					<div className="container">
 
@@ -330,21 +328,21 @@ render(){
 					 <div className="row">
 						 <div className="col-md-4">
 
-							 <div className="card animated fadeInUp animation-delay-7">
-								 <div style={{backgroundColor:'#ff0088'}}>
-									 <h3 className="color-white index-1 text-center no-m pt-4" style={{fontWeight:700,fontSize:'2.3em'}}><Link style={{color:'white'}} to={'/profile/'+ this.props.user.username}>{this.props.user.username.toUpperCase()}</Link></h3>
+							 <div className="card animated fadeInUp animation-delay-7" style={{background:'#F8FAE3', border: '1px solid #FC2452', boxShadow: '0 2px 2px transparent'}}>
+								 <div style={{backgroundColor:'#FC2452'}}>
+									 <h4 className="index-1 text-center no-m pt-4" style={{fontWeight:400,fontSize:'2.0em'}}><Link style={{color:'#F8FAE3'}} to={'/profile/'+ this.props.user.username}>{this.props.user.username.toUpperCase()}</Link></h4>
 									 <Link to={'/profile/'+ this.props.user.username}><img src={this.props.user.image} alt="..." className="img-avatar-circle" /></Link> </div>
 								 <div className="card-block pt-4 text-center">
-									 <h3 style={{color:'#000', fontWeight: '500'}}>"About Me"</h3>
-									 <p><span style={{color:'#ff0088', fontWeight: '400'}}>GENDER: </span><span style={{color:'#000', fontWeight: '400'}}>{this.props.user.gender}</span></p>
-									 <p><span style={{color:'#ff0088', fontWeight: '400'}}>CITY: </span><span style={{color:'#000', fontWeight: '400'}}>{this.props.user.city}</span></p>
-									 <p><span style={{color:'#ff0088', fontWeight: '400'}}>BIO: </span><span style={{color:'#000', fontWeight: '400'}}>{this.props.user.bio}</span></p>
+									 <h3 style={{color:'#FC2452', fontWeight: '500'}}>"About Me"</h3>
+									 <p><span className="text-uppercase" style={{color:'#FC2452', fontWeight: '300'}}>{this.props.user.gender}</span></p>
+									 <p><span className="text-uppercase" style={{color:'#FC2452', fontWeight: '300'}}>{this.props.user.city}</span></p>
+									 <p><span className="text-uppercase" style={{color:'#FC2452', fontWeight: '300'}}>{this.props.user.bio}</span></p>
 
 									 &nbsp;
-								 	<Link className="btn btn-raised" to={'/updateprofile/'+this.props.user.username} style={{backgroundColor:'#ff0088', color: '#fff'}}>
-										<i className="zmdi zmdi-account-box-o" style={{fontWeight: '400'}}></i>Update Profile
+								 	<Link className="btn btn-raised" to={'/updateprofile/'+this.props.user.username} style={{backgroundColor:'#FC2452', color: '#F8FAE3'}}>
+										<i className="zmdi zmdi-account-box-o text-uppercase" style={{fontWeight: '400'}}></i>Update Profile
 								 	</Link><br />
-								<a style={{fontSize:'1em'}} className="pull-right" href="#" onClick={this.logout.bind(this)} style={{color:'#000', fontWeight: '400'}}>LOGOUT</a><br />
+								<a style={{fontSize:'.3em'}} className="pull-right text-uppercase" href="#" onClick={this.logout.bind(this)} style={{color:'#FC2452', fontWeight: '400'}}>LOGOUT</a><br />
 								 </div>
 							 </div>
 								<Zones />

@@ -30,59 +30,59 @@ class Profile extends Component{
     var header = null
     if (profile != null){
       header = (
-				<div style={{backgroundColor: '#000'}}>
-					<div className="ms-hero-page-override ms-bg-fixed" style={{backgroundColor: '#ff0088', color:'#fff'}}>
+				<div style={{backgroundColor: '#FC2452'}}>
+					<div className="ms-hero-page-override ms-bg-fixed" style={{backgroundColor: '#F8FAE3', color:'FC2452'}}>
 						<div className="container" >
-							<div  className="text-center mt-2" style={{paddingTop:75}}>
-								<h1 className="color-white mt-4 animated fadeInUp animation-delay-10" style={{fontWeight:'700'}}>Profile Page</h1>
+							<div className="text-center mt-2" style={{paddingTop:75}}>
+								<h2 className="mt-4 animated fadeInUp animation-delay-10 text-uppercase" style={{fontWeight:'400', color: '#FC2452'}}>Profile Page</h2>
 								<img src={profile.image} className="ms-avatar-hero animated zoomIn animation-delay-7" />
-								<h1 className="color-white mt-4 animated fadeInUp animation-delay-10">{profile.firstName} {profile.lastName}</h1>
-								<h3 className="no-mb animated fadeInUp animation-delay-10" style={{color:'#fff'}}>{profile.bio}</h3>
+								<h2 className="mt-4 animated fadeInUp animation-delay-10 text-uppercase" style={{color: '#FC2452'}}><strong>{profile.firstName} {profile.lastName}</strong></h2>
+								<h3 className="no-mb animated fadeInUp animation-delay-10 text-uppercase" style={{color:'#FC2452'}}>{profile.bio}</h3>
 							</div>
 						</div>
 					</div>
-					<div  className="container">
+					<div  className="container" style={{backgroundColor: '#FC2452'}}>
 						<div className="row">
 							<div className="col-md-6 col-md-offset-3">
 								<div className="card-block">
-									<h2  className="no-mb" style={{textAlign:'center',padding:'20px 0 20px 0', color: '#ff0088', fontWeight: '400'}}>Personal Information</h2>
+									<h3  className="no-mb text-uppercase" style={{textAlign:'center',padding:'20px 0 20px 0', color: '#F8FAE3', fontWeight: '400'}}>Personal Information</h3>
 								</div>
 								<div>
 								<table className="table table-striped table-striped-warning">
 									<tbody>
-										<tr style={{backgroundColor: '#000', color:'#fff', border: '2px solid #fff'}}>
+										<tr style={{backgroundColor: '#FC2452', color:'#F8FAE3', border: '2px solid #F8FAE3'}}>
 											<th>
-												<i className="zmdi zmdi-face mr-1 color-warning"></i> Full Name</th>
-											<td>{profile.firstName} {profile.lastName}</td>
+												<i className="zmdi zmdi-face mr-1"></i> Full Name</th>
+											<td className="text-uppercase">{profile.firstName} {profile.lastName}</td>
 										</tr>
-										<tr  style={{backgroundColor: '#000', color:'#fff', border: '2px solid #ff0088'}}>
+										<tr  style={{backgroundColor: '#FC2452', color:'#F8FAE3', border: '2px solid #F8FAE3'}}>
 											<th>
-												<i className="zmdi zmdi-account mr-1 color-royal"></i> User Name</th>
-											<td>{profile.username}</td>
+												<i className="zmdi zmdi-account mr-1"></i> User Name</th>
+											<td className="text-uppercase">{profile.username}</td>
 										</tr>
-										<tr style={{backgroundColor: '#000', color:'#fff', border: '2px solid #fff'}}>
+										<tr style={{backgroundColor: '#FC2452', color:'#F8FAE3', border: '2px solid #F8FAE3'}}>
 											<th>
-												<i className="zmdi zmdi-male-female mr-1 color-success"></i> Gender</th>
-											<td>{profile.gender}</td>
+												<i className="zmdi zmdi-male-female mr-1"></i> Gender</th>
+											<td className="text-uppercase">{profile.gender}</td>
 										</tr>
-										<tr style={{backgroundColor: '#000', color:'#fff', border: '2px solid #ff0088'}}>
+										<tr style={{backgroundColor: '#FC2452', color:'#F8FAE3', border: '2px solid #F8FAE3'}}>
 											<th>
-												<i className="zmdi zmdi-email mr-1 color-primary"></i> Email</th>
-											<td>
-												<a href="#">{profile.username}@me.com</a>
+												<i className="zmdi zmdi-email mr-1"></i> Email</th>
+											<td className="text-uppercase">
+												<a href="#" style={{color: '#F8FAE3'}}>{profile.username}@me.com</a>
 											</td>
 										</tr>
-										<tr style={{backgroundColor: '#000', color:'#fff', border: '2px solid #fff'}}>
+										<tr style={{backgroundColor: '#FC2452', color:'#F8FAE3', border: '2px solid #F8FAE3'}}>
 											<th>
-												<i className="zmdi zmdi-link mr-1 color-danger"></i> Website</th>
-											<td>
-												<a href="#">www.{profile.username}.com</a>
+												<i className="zmdi zmdi-link mr-1"></i> Website</th>
+											<td className="text-uppercase">
+												<a href="#" style={{color: '#F8FAE3'}}>www.{profile.username}.com</a>
 											</td>
 										</tr>
 									</tbody>
 								</table>
 								</div>
-								<Link to ="/"><button style={{margin:'0 auto 100px auto', width:'50%', backgroundColor: '#ff0088', color: '#fff', textAlign: 'center'}} type="" className="btn btn-success  btn-raised btn-block"><i className="ml-1 no-mr zmdi zmdi-home"></i>&nbsp;&nbsp;Home</button></Link>
+								<Link to ="/"><button style={{margin:'0 auto 100px auto', width:'50%', backgroundColor: '#F8FAE3', color: '#FC2452', textAlign: 'center'}} type="" className="btn btn-raised btn-block"><i className="ml-1 no-mr zmdi zmdi-home"></i>&nbsp;&nbsp;Home</button></Link>
 
 							</div>
 						</div>

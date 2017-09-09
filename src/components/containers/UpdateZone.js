@@ -61,7 +61,7 @@ console.log('SubmitZone')
           <h2>Current Zone:</h2>
           <h3>Zip Code: <span style={styles.profile.entry}>{this.props.list[this.props.selected].zipCodes}</span></h3>
           <h3>Zone Name: <span style={styles.profile.entry}> {this.props.list[this.props.selected].name}</span></h3>
-          <Link to ="/"><button style={{marginRight:10}} type="" className="btn btn-info">Home</button></Link>
+          <Link to ="/"><button style={{marginRight:10}} type="" className="btn">Home</button></Link>
 
           </div>
           <div style={styles.zone.container}>

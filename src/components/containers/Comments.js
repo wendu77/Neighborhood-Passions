@@ -146,12 +146,12 @@ class Comments extends Component {
 			 header =
 				<div>
 					<article className="card wow fadeIn animation-delay-2 mb-4">
-					<div className="card-block" style={{backgroundColor: '#000', color: '#ff0088', fontWeight: '500', display: 'block', textAlign: 'center'}}>
+					<div className="card-block text-uppercase" style={{backgroundColor: '#FC2452', color: '#F8FAE3', fontWeight: '400', display: 'block', textAlign: 'center'}}>
 						<div className="row">
 							<div className="col-lg-12">
-							<h2 style={{color:'#fff'}}>Posts for <span style={{color:'#fff', fontWeight: '500'}}>{zoneName}</span></h2>
-							<center><img style={{width:'85%', maxHeight:300, border: '3px solid #fff'}} src="/images/neighborhood.jpg" /><br /><br />
-								<button type="button" className="btn btn-success btn-raised" data-toggle="modal" data-target="#myModal2" style={{backgroundColor: '#ff0088', color:'#fff'}}>
+							<h2 className="text-uppercase" style={{color:'#F8FAE3'}}>Posts for <span className="text-uppercase" style={{color:'#F8FAE3', fontWeight: '500'}}>{zoneName}</span></h2>
+							<center><img style={{width:'85%', maxHeight:300, border: '1px solid #FC2452'}} src="/images/neighborhood.jpg" /><br /><br />
+								<button type="button" className="btn btn-raised text-uppercase" data-toggle="modal" data-target="#myModal2" style={{backgroundColor: '#F8FAE3', color:'#FC2452'}}>
 									Create Post&nbsp;&nbsp;<i className="zmdi zmdi-comment-outline"></i>
 								</button>
 							</center>
@@ -161,29 +161,29 @@ class Comments extends Component {
 						</div>
 						</article>
 						<div>
-							<ul style={{listStyle:'none', padding:0, color: '#ff0088'}}>
+							<ul className="text-uppercase" style={{listStyle:'none', padding:0, color: '#000'}}>
 								{ commentList }
 							</ul>
 						</div>
 
 							<center>
-								<button style={{marginBottom:50}} type="button" className="btn btn-raised" data-toggle="modal" data-target="#myModal2" style={{backgroundColor: '#000', color:'#fff'}}>
-									Create Post&nbsp;&nbsp;<i className="zmdi zmdi-comment-outline"></i>
+								<button style={{marginBottom:50}} type="button" className="btn btn-raised text-uppercase" data-toggle="modal" data-target="#myModal2" style={{backgroundColor: '#FC2452', color:'#F8FAE3'}}>
+									Create Comment For This Neighborhood&nbsp;&nbsp;<i className="zmdi zmdi-comment-outline"></i>
 								</button>
 							</center>
 
 
 
 			 <div className="modal" id="myModal2" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel2">
-					 <div className="modal-dialog modal-lg animated zoomIn animated-3x" role="document">
-							 <div className="modal-content" style={{color:'#ff0088'}}>
-									 <div className="modal-header" style={{color:'#ff0088'}}>
-											<button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{backgroundColor: '#ff0088', color:'#fff'}}><span aria-hidden="true"><i className="zmdi zmdi-close"></i></span></button>
+					 <div className="modal-dialog modal-md animated zoomIn animated-3x" role="document">
+							 <div className="modal-content text-uppercase" style={{backgroundColor: '#F8FAE3', color:'#FC2452'}}>
+									 <div className="modal-header text-uppercase" style={{color:'#FC2452'}}>
+											<button type="button" className="close" data-dismiss="modal" aria-label="Close" style={{backgroundColor: '#FC2452', color:'#F8FAE3'}}><span aria-hidden="true"><i className="zmdi zmdi-close"></i></span></button>
 
 									 </div>
-									 <div className="modal-body">
+									 <div className="modal-body text-uppercase">
 
-									 <CreateComment commentImage={this.state.updated.commentImage}  handleImage={this.uploadImage.bind(this)}  onCreate={this.submitComment.bind(this)} />
+									 <CreateComment commentImage={this.state.updated.commentImage} handleImage={this.uploadImage.bind(this)}  onCreate={this.submitComment.bind(this)} />
 
 									 </div>
 

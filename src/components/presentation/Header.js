@@ -12,10 +12,10 @@ const Header = (props) => {
 								<i className="zmdi zmdi-close"></i>
 							</span>
 						</button>
-						<div className="modal-title text-center" style={{backgroundColor:'#ff0088'}}>
-							<span className="ms-logo ms-logo-sm mr-1" style={{backgroundColor:'#ff0088'}}>JD</span>
-							<h3 className="no-m ms-site-title">Neighborhood
-								<span>Doings</span>
+						<div className="modal-title text-center" style={{backgroundColor:'#FC2452'}}>
+							<span className="ms-logo ms-logo-sm mr-1" style={{backgroundColor:'#F8FAE3', color: '#FC2452'}}>CO</span>
+							<h3 className="no-m ms-site-title" style={{color: '#F8FAE3'}}>NEIGHBORHOOD
+								<span>PASSIONS</span>
 							</h3>
 						</div>
 
@@ -24,26 +24,26 @@ const Header = (props) => {
 				</div>
 			</div>
 		</div>
-		<header className="ms-header" style={{backgroundColor:'#000'}}>
+		<header className="ms-header" style={{backgroundColor:'#FC2452'}}>
 			<div className="container container-full">
 				<div className="ms-title">
 					<a href="index.html">
-						<span className="ms-logo animated zoomInDown animation-delay-5" style={{backgroundColor:'#ff0088'}}>CO</span>
-						<h1 className="animated fadeInRight animation-delay-6" style={{color:'#fff'}}>Neighborhood
-							<span>Doings</span>
+						<span className="ms-logo animated zoomInDown animation-delay-5" style={{backgroundColor:'#F8FAE3', color: '#FC2452'}}>CO</span>
+						<h1 className="animated fadeInRight animation-delay-6" style={{color:'#F8FAE3'}}>NEIGHBORHOOD
+							<span>PASSIONS</span>
 						</h1>
 					</a>
 				</div>
 			</div>
 		</header>
-		<nav className="navbar navbar-static-top yamm ms-navbar" style={{backgroundColor:'#ff0088'}}>
+		<nav className="navbar navbar-static-top yamm ms-navbar" style={{backgroundColor:'#FC2452', boxShadow: '0 3px 3px transparent'}}>
 			<div className="container container-full">
 				<div className="navbar-header">
 					<a className="navbar-brand" href="index.html">
 
-						<span className="ms-logo ms-logo-sm" style={{backgroundColor:'#000', color: '#fff'}}>CO</span>
-						<span className="ms-title">Neighborhood
-							<strong>Doings</strong>
+						<span className="ms-logo ms-logo-sm" style={{backgroundColor:'#F8FAE3', color: '#FC2452'}}>CO</span>
+						<span className="ms-title" style={{color: '#F8FAE3'}}>NEIGHBORHOOD
+							<strong>PASSIONS</strong>
 						</span>
 					</a>
 				</div>

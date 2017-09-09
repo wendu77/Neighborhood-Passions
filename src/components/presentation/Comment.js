@@ -83,28 +83,28 @@ grabImage(files){
 		const showEditButton = (this.props.user.username == author.username && this.state.showEdit==true) ?
 
 		<div className="col-lg-4 text-right">
-			<a onClick={this.handleEditClick.bind(this)} href="javascript:void(0)" className="btn btn-raised btn-block" style={{backgroundColor: '#ff0088', color: '#fff'}}><i className="ml-1 no-mr zmdi zmdi-edit"></i>&nbsp;&nbsp;Edit
+			<a onClick={this.handleEditClick.bind(this)} href="javascript:void(0)" className="btn btn-raised btn-block text-uppercase" style={{backgroundColor: '#F8FAE3', color: '#FC2452'}}><i className="ml-1 no-mr zmdi zmdi-edit"></i>&nbsp;&nbsp;Edit
 			</a>
 		</div>
 		: null
 
 		const commentEditingInfo = (this.state.isEditing == true) ?
-			<div>
+			<div style={{backgroundColor: '#FC2452'}}>
 				<div className="row">
 				<div className="col-md-12">
-				<hr style={{border:'2px solid #ff0088', background:'#ff0088', color:'#ff0088'}} />
+				<hr style={{border:'1px solid #F8FAE3', color:'#F8FAE3'}} />
 				<div style={{padding:30}}>
-				<h3 style={{textAlign: 'center'}}>Edit Your Current Comment Below:</h3>
+				<h4 className="text-uppercase" style={{textAlign: 'center', color: "#F8FAE3"}}>Edit Your Current Comment Below:</h4>
 
-				<input  className="form-control" onChange={this.handleEditChange.bind(this)} type="text" placeholder="Change Title" id="title" style={{color: '#000'}}/> <br />
-				<input  className="form-control" onChange={this.handleEditChange.bind(this)} type="text" placeholder="Change Text" id="body" style={{color: '#000'}}/> <br />
+				<input className="form-control text-uppercase" onChange={this.handleEditChange.bind(this)} type="text" placeholder="Change Title" id="title" style={{color: '#F8FAE3'}}/> <br />
+				<input className="form-control text-uppercase" onChange={this.handleEditChange.bind(this)} type="text" placeholder="Change Text" id="body" style={{color: '#F8FAE3'}}/> <br />
 				</div>
 			</div>
 		</div>
 		<div className="row" >
 		<div className="col-md-6" style={{padding:30}}>
-			<DropZone style={{border:'1px solid transparent',fontSize:'1.5em'}} onDrop={this.grabImage.bind(this)}><a onClick={this.handleEditClick.bind(this)} href="javascript:void(0)" style={{color: '#000'}}>
-				<i className="ml-1 no-mr zmdi zmdi-camera" style={{color: '#ff0088'}}></i>&nbsp;Change Post Image
+			<DropZone style={{border:'1px solid transparent', fontSize:'1em'}} onDrop={this.grabImage.bind(this)}><a onClick={this.handleEditClick.bind(this)} href="javascript:void(0)" style={{color: '#F8FAE3'}} className="text-uppercase text-center">
+				<i className="ml-1 no-mr zmdi zmdi-camera" style={{color: '#F8FAE3'}}></i>&nbsp;Change Post Image
 			</a></DropZone>
 		</div>
 			 <div className="col-md-6" style={{padding:30}}>
@@ -115,11 +115,11 @@ grabImage(files){
 				 <div className="col-md-12" style={{padding:30}}>
 				<div className="row">
 					<div className="col-md-6" style={{padding:10}}>
-						<a style={{width:'50%', color:'#fff'}} onClick={this.updateComment.bind(this)} href="javascript:void(0)" className="pull-right btn btn-raised btn-block animate-icon" style={{backgroundColor: '#ff0088', color: '#fff'}}>Submit&nbsp;&nbsp;<i className="ml-1 no-mr zmdi zmdi-long-arrow-right"></i>
+						<a style={{width:'50%', color:'#FC2452'}} onClick={this.updateComment.bind(this)} href="javascript:void(0)" className="pull-right btn btn-raised btn-block animate-icon text-uppercase" style={{backgroundColor: '#F8FAE3', color: '#FC2452'}}>Submit&nbsp;&nbsp;<i className="ml-1 no-mr zmdi zmdi-long-arrow-right"></i>
 					 </a>
 					</div>
 					<div className="col-md-6" style={{padding:10}}>
-						<a style={{width:'50%', color:'#fff'}} onClick={this.cancelEdit.bind(this)} href="javascript:void(0)" className="pull-left btn btn-raised btn-block " style={{backgroundColor: '#000', color: '#fff'}}><i className="ml-1 no-mr zmdi zmdi-close"></i>&nbsp;&nbsp;Cancel
+						<a style={{width:'50%', color:'#FC2452'}} onClick={this.cancelEdit.bind(this)} href="javascript:void(0)" className="pull-left btn btn-raised btn-block text-uppercase" style={{backgroundColor: '#F8FAE3', color: '#FC2452'}}><i className="ml-1 no-mr zmdi zmdi-close"></i>&nbsp;&nbsp;Cancel
 					 </a>
 					</div>
 					<div className="col-md-6">
@@ -139,30 +139,30 @@ grabImage(files){
 		return (
 
 			<div>
-				<article className="card wow fadeInLeft animation-delay-5 mb-4">
+				<article className="card wow fadeInLeft animation-delay-5 mb-4" style={{backgroundColor: '#FC2452'}}>
 					<div className="card-block">
 						<div className="row">
 							<div className="col-lg-6">
 								<img src={currentComment.commentImage} alt="" className="img-responsive mb-4" />
 							</div>
 							<div className="col-lg-6">
-								<h3 className="no-mt" style={{color:'#000', fontWeight: '400'}}>
+								<h3 className="no-mt text-uppercase" style={{color:'#F8FAE3', fontWeight: '400'}}>
 									{currentComment.title}
 								</h3>
-								<p className="mb-4">{currentComment.body}</p>
+								<p className="mb-4 text-uppercase" style={{color: '#F8FAE3', fontWeight: '300'}}>{currentComment.body}</p>
 							</div>
 						</div>
 						<div className="row">
-							<div className="col-lg-8">
+							<div className="col-lg-8" style={{color: '#F8FAE3'}}>
 								<Link  to = {'/profile/'+ currentComment.username}>
-									<img style={{height:50, width:50, borderRadius:25}} src={author.image} alt="..." className="img-circle mr-1" />
+									<img style={{height:50, width:50, borderRadius:25}} src={author.image} alt="..." className="img-circle mr-1 text-uppercase" />
 								</Link>
-								by&nbsp;
-								<a  className="ms-tag" href="javascript:void(0)" style={{backgroundColor: '#000'}}><Link style={{color:'#fff'}}  to = {'/profile/'+ currentComment.username}>{currentComment.username}</Link></a>
+								BY&nbsp;
+								<a  className="ms-tag" href="javascript:void(0)" style={{backgroundColor: '#F8FAE3'}}><Link style={{color:'#FC2452'}}  to = {'/profile/'+ currentComment.username}>{currentComment.username}</Link></a>
 
 								<span className="ml-1 hidden-xs">
-									<i className="zmdi zmdi-time mr-05"  style={{color: '#ff0088'}}></i>
-									<span className="color-medium-dark">{DateUtils.formattedDate(currentComment.timestamp)}</span>
+									<i className="zmdi zmdi-time mr-05"  style={{color: '#F8FAE3'}}></i>
+									<span style={{color: '#F8FAE3'}}>{DateUtils.formattedDate(currentComment.timestamp)}</span>
 								</span>
 
 							</div>

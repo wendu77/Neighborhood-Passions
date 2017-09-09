@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
-import { CreateZone, Zone}  from '../presentation'
+import { CreateZone, Zone } from '../presentation'
 import styles               from './styles'
 import { APIManager }       from '../../utils'
 import { connect }          from 'react-redux'
 import actions              from '../../actions/actions'
 import store                from '../../stores/store'
-
 
 class Zones extends Component {
 	constructor(){
@@ -66,7 +65,7 @@ class Zones extends Component {
 		 listItems = this.props.list.map((zone, i) => {
 			let selected = (i==this.props.selected)
 			return (
-				<li style={{marginTop:15}} role="presentation" key={i}>
+				<li className="text-uppercase" style={{marginTop:15}} role="presentation" key={i}>
 					<Zone index={i} username={this.props.user.username} select={this.selectZone.bind(this)} isSelected={selected} currentZone={zone} />
 				</li>
 
@@ -78,17 +77,17 @@ class Zones extends Component {
 		// let update = (this.props.user.username == this.props.list[this.props.selected].username) ? "Button" : "NoButton"
 		 header = 	<div>
 			 						<div>
-				 						<div className="card animated fadeInUp animation-delay-7">
-											<div className="card-header" style={{backgroundColor:'#000', color: '#fff'}}>
-												<h3 className="card-title">
+				 						<div className="card animated fadeInUp animation-delay-7" style={{backgroundColor: '#F8FAE3', border: '1px solid #FC2452', boxShadow: '0 2px 2px transparent'}}>
+											<div className="card-header" style={{backgroundColor:'#FC2452', color: '#F8FAE3'}}>
+												<h3 className="card-title text-uppercase">
 													<i className="zmdi zmdi-apps"></i> Neighborhoods</h3>
 											</div>
 											<div className="tab-content">
 				                <div role="tabpanel" className="tab-pane fade active in" id="favorite">
 				                  <div className="card-block">
-														<h4>Select Neighborhood to view comments</h4>
+														<h6 className="text-uppercase text-center" style={{fontWeight: '300', color: '#FC2452'}}>Select Neighborhood to view comments</h6>
 				                    <div className="ms-media-list">
-															<ul style={{listStyle:'none'}}>
+															<ul className="text-uppercase" style={{listStyle:'none'}}>
 																{listItems}
 															</ul>
 													</div>
@@ -97,10 +96,9 @@ class Zones extends Component {
 										</div>
 									</div>
 								</div>
-								<div style={{background:'white'}}>
+								<div style={{background:'#F8FAE3'}}>
 									<CreateZone  onCreate={this.addZone.bind(this)} />
 								</div>
-
 						</div>
 	}else{
 		header = <div>
