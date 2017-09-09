@@ -11,3 +11,6 @@ profileScratch.hjs
 /public/assets/img/demo
 /public/assets/media
 /public/build/
+/src/components/containers/Account.js
+/src/components/containers/Comments.js
+/src/components/containers/UpdateProfile.js
