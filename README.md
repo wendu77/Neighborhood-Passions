@@ -4,6 +4,7 @@ Ever wonder <strong>what's going</strong> on in your neighborhood?? Well, now yo
 ## Technologies Used
 MongoDB, Express, ReactJS, NodeJS with Server Side Rendering, CRUD, REST API, Redux, Twitter Bootstrap, Materialize
 
-<strong>LIVE DEMO</strong>: https://neighborhood-passions.herokuapp.com/
+## Live Demo
+https://neighborhood-passions.herokuapp.com/
 
 ![neighborhoodpassionsgif](https://user-images.githubusercontent.com/24254780/30243784-2fd20604-957f-11e7-89ec-fbaaf856e369.gif)
